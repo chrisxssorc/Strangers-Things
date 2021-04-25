@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    border-bottom: 2px solid black;
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#user-forms {
+    margin: 10px;
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+#user-forms button {
+    margin-top: 10px;;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 60vw;
+    overflow: auto;
+}
+
+#app .hidden {
+    display: none;
+}
+
+#app #search {
+    padding-top: 25px;
+    margin-left: 350px;
+}
+
+#app #search-form {
+    display: flex;
+    flex-direction: row;
+}
+
+#app #clear-search-button {
+    margin-left: 170px;
+}
+
+#app .card {
+    margin: 20px;
+    margin-top: 0;
+    min-height: 40vh;
+    width: 40vw;
+}
+
+#app .card-body{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: rgb(207, 207, 207);
+}
+
+#app .card .text-area{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 2px;
+    border-top: 1px solid black;
+}
+
+.interact-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .control-buttons {
+    margin-top: 10px;
+}
+
+#new-message-form {
+    margin-top: 20px;
+}
+
+#new-message-form button {
+    margin-top: 10px;
+}
+
+#message-board {
+    height: 100vh;
+    width: 45vw;
+    overflow: auto;
+    padding: 15px;
+}
+
+#message-board .message-board-header {
+    text-align: center;
+    padding: 10px;
+}
+
+#message-board h4{
+    text-align: center;
+}
+
+#message-board .card {
+    margin: 20px;
+    min-height: 10vh;
+    min-width: 10vw;
+}
+
+#message-board .card-body{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: rgb(207, 207, 207);
+}
+
+#post-entry{
+    height: 100vh;
+    padding: 25px;
+    border-left: 2px solid black;
+}
+
+.hidden {
+    display: none;
+}
