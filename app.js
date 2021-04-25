@@ -56,7 +56,7 @@ function unauthRenderPost(post){
 function unauthRenderAllPosts(posts){
     $('#app #posts').empty()
     posts.forEach(function(post){
-        $('#app #posts').append(unauthRenderPost(post))
+        $('#app #posts').prepend(unauthRenderPost(post))
     })
 }
 
@@ -112,7 +112,7 @@ function renderPost(post, me){
 function renderAllPosts(posts, me){
     $('#app #posts').empty()
     posts.forEach(function(post){
-        $('#app #posts').append(renderPost(post, me))
+        $('#app #posts').prepend(renderPost(post, me))
     })
 }
 
@@ -363,7 +363,7 @@ $('#app').on('click', '#send-message-button', function (event) {
 
     postNewMessage(postId, newMessage)
 
-    $(this).trigger('reset')
+    postElement.find('#message').val('')
 })
 
 // Sends a request to the API to delete a post
